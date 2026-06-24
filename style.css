@@ -1,0 +1,73 @@
+﻿
+.brand-filter-container::-webkit-scrollbar {
+    width: 4px;
+}
+
+.brand-filter-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.brand-filter-container::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 10px;
+}
+
+.brand-filter-container::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
+
+/* Анимации */
+.product-card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.product-card:hover {
+    transform: translateY(-4px);
+}
+
+/* Обрезание текста в карточках */
+.line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Активная кнопка фильтра */
+.active-brand-filter {
+    background-color: #eff6ff;
+    color: #1d4ed8;
+}
+
+/* Стили для модальных окон */
+.fixed.inset-0 {
+    animation: fadeIn 0.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Стили для карты */
+.map-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}   
